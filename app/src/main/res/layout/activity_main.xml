@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    android:backgroundTint="#B3E5FC"
+    android:foregroundTint="#C1A3A3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-84dp"
+        android:scaleType="matrix"
+        android:src="@drawable/cloud"
+        tools:srcCompat="@drawable/cloud" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/alkalami"
+        android:text="⛅SkyCast"
+        android:textColor="@color/white"
+        android:textSize="52dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="124dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="serif"
+        android:hint="Enter City"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="36dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableTint="#F0DEDE"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Search"
+        android:textColor="#121212"
+        android:textColorLink="#FFFFFF"
+        android:textSize="16sp"
+        app:iconTint="#DCD3D3" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="333dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textFontWeight="300"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="82dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="63dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/baseline_add_location_24" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="118dp"
+        android:fontFamily="serif"
+        android:text="Forecast Details        "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="297dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="47dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/baseline_arrow_circle_down_24" />
+
+</RelativeLayout>
